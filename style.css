@@ -2,11 +2,32 @@
   font-size: 16px;
   margin: 0;
   padding: 0;
+  font-family: "Source Sans 3", serif;
+  background-color: #f9f4f4;
+}
+
+.gorditas-regular {
+  font-family: "Gorditas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.averia-sans-libre-regular {
+  font-family: "Averia Sans Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.source-sans-3 {
+  font-family: "Source Sans 3", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #00f1ff;
 }
 
 .header__image-patos {
@@ -25,6 +46,8 @@ a {
 .header__title {
   text-align: center;
   font-size: 65px;
+  font-family: "Gorditas", serif;
+  color: #d1d136;
 }
 
 .header__title-paragraph {
@@ -38,6 +61,8 @@ a {
 }
 
 .element__title {
+  font-family: "Averia Sans Libre", serif;
+  color: #ff8fa6;
   text-align: center;
   font-size: 35px;
   margin-top: 50px;
@@ -62,6 +87,8 @@ a {
 }
 
 .element__subtitle {
+  font-family: "Averia Sans Libre", serif;
+  color: #ff8fa6;
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 25px;
@@ -86,7 +113,7 @@ a {
 
 .element__item:hover {
   cursor: pointer;
-  color: blue;
+  color: #aca22e;
 }
 
 .instructions {
@@ -96,11 +123,13 @@ a {
 }
 
 .instructions__title {
+  font-family: "Gorditas", serif;
+  color: #d1d136;
   font-size: 45px;
 }
 
 .instructions__title:hover {
-  color: blue;
+  color: #aca22e;
 }
 
 .instructions__paragraph {
@@ -115,15 +144,19 @@ a {
 }
 
 .instructions__item {
+  font-family: "Averia Sans Libre", serif;
+  color: #ff8fa6;
   font-size: 30px;
 }
 
 .instructions__subtitle {
+  color: #d1d136;
+  font-family: "Gorditas", serif;
   font-size: 25px;
 }
 
 .instructions__subtitle:hover {
-  color: blue;
+  color: #aca22e;
 }
 
 .about {
@@ -140,6 +173,8 @@ a {
 }
 
 .about__title {
+  color: #d1d136;
+  font-family: "Gorditas", serif;
   font-size: 45px;
 }
 
@@ -157,4 +192,5 @@ a {
   text-align: justify;
   margin-bottom: 10px;
   margin-left: 40px;
+  font-family: "Averia Sans Libre", serif;
 }
