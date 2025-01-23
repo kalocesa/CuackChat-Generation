@@ -1,0 +1,36 @@
+.about {
+  border: 1px solid red;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  position: relative;
+}
+
+.about__container {
+  max-width: 570px;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  right: 50px;
+}
+
+.about__title {
+  font-family: var(--font_subtitle);
+  color: var(--subtitle);
+  font-size: 65px;
+}
+
+.about__paragraph {
+  font-family: var(--font_text);
+  font-size: 20px;
+  width: 100%;
+  text-align: justify;
+  margin: 30px 0;
+}
+
+.about__image {
+  width: 600px;
+  position: absolute;
+  bottom: 80px;
+  right: 50%;
+}

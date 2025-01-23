@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,55 +14,43 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>CuackChat!</h1>
-            <p><strong>Si, solo patos.</strong></p>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__container-title">
+                <h1 class="header__title">CuackChat!</h1>
+                <p class="header__paragraph-title"><strong>Si, solo patos...</strong></p>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li><a class="header__link" href="blank">Iniciar sesión</a></li>
+                    <li><a class="header__link" href="crea-pato.html">Crear tu pato</a></li>
+                    <li><a class="header__link" href="top.html">Top patos</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="blank">Iniciar sesión</a></li>
-                <li><a href="crea-pato.html">Crear tu pato</a></li>
-                <li><a href="top.html">Top patos</a></li>
-            </ul>
-        </nav>
-        <div>
-            <h2>Bienvenidos</h2>
-            <p>Crea tu pato-personaje único, únete a una
+        <div class="header__container-welcome">
+            <h2 class="header__subtitle">Bienvenidos</h2>
+            <p class="header__paragraph">Crea tu pato-personaje único, únete a una
                 comunidad vibrante y comparte aventuras en un
-                espacio lleno de diversión y creatividad. ¡Deja que el
+                espacio lleno de diversión y creatividad. <br> ¡Deja que el
                 cuac-cuac sea tu guía!</p>
+            <button type="menu" class="header__button"><a class="header__link-profile" href="">Crear cuenta</a></button>
         </div>
-        <button>Crear cuenta</button>
-        <img src="" alt="pato amarillo de goma">
-        <img src="" alt="fondo de colores con puntos">
+        <img src="./Images/fondo.jpeg" alt="Lineas de colores verticales" class="header__background">
+        <img src="./Images/pato.png" alt="pato amarillo de goma" class="header__pato">
     </header>
     <main>
-        <section>
-            <cite>
-                <h2>¡ Pato fundador !</h2>
-                <p>En el lago sereno y claro, nada un pato; tan raro... Con su cuerno
+        <section class="about">
+            <cite class="about__container">
+                <h2 class="about__title">Pato fundador</h2>
+                <p class="about__paragraph">En el lago sereno y claro, nada un pato; tan raro... Con su cuerno
                     brillante y dorado, un pato unicornio es un sueño encantado. Sus plumas como estrellas relucen,
                     bajo el cielo, sus alas se abren. En su
                     mundo, la
                     magia es verdad. </p>
                 <p><strong>- Patcornio</strong></p>
             </cite>
-            <img src="./Images/pato unicornio.png" alt="pato unicornio de goma">
-        </section>
-        <section>
-            <h2><a href="crea-pato.html">Crea tu pato</a></h2>
-            <p>No olvides explorar, crear e interactuar para hacer nuevos amigos pato.
-                ¡CuackChat está esperando por ti!
-                <br>
-                ¡Bienvenido y que tengas una experiencia cuac-tástica!
-            </p>
-            <ol>
-                <li>Escoge tu pato</li>
-                <li>Caracteriza a tu pato</li>
-                <li>Nombra a tu pato</li>
-            </ol>
-            <h3><a href="">¡Cuacklisto! charlemos</a></h3>
+            <img src="./Images/pato unicornio.png" alt="pato unicornio de goma" class="about__image">
         </section>
         <section>
             <h2>Descubre nuestro top 5 de los más patásticos</h2>
@@ -130,132 +118,133 @@
                 </div>
             </article>
         </section>
-    </main>
-    <header>
-        <h1>Crea tu pato</h1>
-    </header>
-    <form action="https://formsubmit.co/kalocesa95@hotmail.com" method="POST">
-        <fieldset>
-            <legend>Escoge tu pato</legend>
-            <label>
-                <input type="radio" name="color" id="amarillo" required> Amarillo
-            </label>
-            <label>
-                <input type="radio" name="color" id="azul" required> Azul
-            </label>
-            <label>
-                <input type="radio" name="color" id="verde" required> Verde
-            </label>
-            <label>
-                <input type="radio" name="color" id="rosa" required> Rosa
-            </label>
-            <label>
-                <input type="radio" name="color" id="rojo" required> Rojo
-            </label>
-            <label>
-                <input type="radio" name="color" id="morado" required> Morado
-            </label>
-            <label>
-                <input type="radio" name="color" id="negro" required> Negro
-            </label>
-            <label>
-                <input type="radio" name="color" id="blanco" required> Blanco
-            </label>
-            <label>
-                <input type="radio" name="color" id="naranja" required> Naranja
-            </label>
-            <label>
-                <input type="radio" name="color" id="cafe" required> Café
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Caracteriza tu pato</legend>
-            <label> Disfraz
-                <select name="characterize" required>
-                    <option value=""></option>
-                    <option value="pirate">Pirata</option>
-                    <option value="superhero">Superhéroe</option>
-                    <option value="cowboy">Vaquero</option>
-                    <option value="astronaut">Astronauta</option>
-                    <option value="chef">Chef</option>
-                    <option value="wizard">Mago</option>
-                    <option value="detective">Detective</option>
-                    <option value="athlete">Deportista</option>
-                    <option value="artist">Artista</option>
-                    <option value="adventurer">Aventurero</option>
-                </select>
-            </label>
-            <label>Personalidad
-                <select name="characterize" required>
-                    <option value=""></option>
-                    <option value="brave">Valiente</option>
-                    <option value="intelligent">Inteligente</option>
-                    <option value="funny">Gracioso</option>
-                    <option value="adventurous">Aventurero</option>
-                    <option value="shy">Tímido</option>
-                    <option value="curious">Curioso</option>
-                    <option value="friendly">Amigable</option>
-                    <option value="cheerful">Risueño</option>
-                    <option value="grumpy">Enojón</option>
-                    <option value="loyal">Leal</option>
-                </select>
-            </label>
-            <label>Detalles
-                <select name="characterize" required>
-                    <option value=""></option>
-                    <option value="scar">Cicatriz en el ala</option>
-                    <option value="tattoo">Tatuaje en la pata</option>
-                    <option value="tic">Tic nervioso con el ojo</option>
-                    <option value="laugh">Risa peculiar</option>
-                    <option value="feathers">Plumas de un color diferente</option>
-                    <option value="upright_feather">Una pluma feliz</option>
-                    <option value="patch">Un parche en el ojo</option>
-                    <option value="narcolepsy">Narcolepsia</option>
-                    <option value="jokes">Contar malos chistes</option>
-                    <option value="magic">Magia</option>
-                </select>
-            </label>
-            <label>Accesorios
-                <select name="characterize" required>
-                    <option value=""></option>
-                    <option value="hat">Sombrero</option>
-                    <option value="cape">Capa</option>
-                    <option value="boots">Botas</option>
-                    <option value="wand">Varita</option>
-                    <option value="glasses">Lentes</option>
-                    <option value="magnifying_glass">Lupa</option>
-                    <option value="knife">Cuchillo</option>
-                    <option value="brushes">Pinceles</option>
-                    <option value="backpack">Mochila</option>
-                    <option value="food">Comida</option>
-                </select>
-            </label>
-            <label>Habilidades
-                <select name="characterize" required>
-                    <option value=""></option>
-                    <option value="telekinesis">Telequinesis</option>
-                    <option value="invisibility">Invisibilidad</option>
-                    <option value="fire_control">Controlar fuego</option>
-                    <option value="healing">Sanación</option>
-                    <option value="super_strength">Superfuerza</option>
-                    <option value="flight">Vuelo</option>
-                    <option value="time_manipulation">Manipulación del tiempo</option>
-                    <option value="mind_reading">Lectura de mentes</option>
-                    <option value="water_control">Controlar agua</option>
-                    <option value="shape_shifting">Cambiar de forma</option>
-                </select>
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Nombra a tu pato:</legend>
-            <label>
-                <input name="name" type="text" placeholder="Nombre de tu pato" minlength="4" maxlength="30" required>
-            </label>
-        </fieldset>
-        <br>
-        <button type="submit">Crear</button>
-    </form>
-    </section>
+        <section>
+            <header>
+                <h1>Crea tu pato</h1>
+            </header>
+            <form action="https://formsubmit.co/kalocesa95@hotmail.com" method="POST">
+                <fieldset>
+                    <legend>Escoge tu pato</legend>
+                    <label>
+                        <input type="radio" name="color" id="amarillo" required> Amarillo
+                    </label>
+                    <label>
+                        <input type="radio" name="color" id="azul" required> Azul
+                    </label>
+                    <label>
+                        <input type="radio" name="color" id="verde" required> Verde
+                    </label>
+                    <label>
+                        <input type="radio" name="color" id="rosa" required> Rosa
+                    </label>
+                    <label>
+                        <input type="radio" name="color" id="rojo" required> Rojo
+                    </label>
+                    <label>
+                        <input type="radio" name="color" id="morado" required> Morado
+                    </label>
+                    <label>
+                        <input type="radio" name="color" id="negro" required> Negro
+                    </label>
+                    <label>
+                        <input type="radio" name="color" id="blanco" required> Blanco
+                    </label>
+                    <label>
+                        <input type="radio" name="color" id="naranja" required> Naranja
+                    </label>
+                    <label>
+                        <input type="radio" name="color" id="cafe" required> Café
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Caracteriza tu pato</legend>
+                    <label> Disfraz
+                        <select name="characterize" required>
+                            <option value=""></option>
+                            <option value="pirate">Pirata</option>
+                            <option value="superhero">Superhéroe</option>
+                            <option value="cowboy">Vaquero</option>
+                            <option value="astronaut">Astronauta</option>
+                            <option value="chef">Chef</option>
+                            <option value="wizard">Mago</option>
+                            <option value="detective">Detective</option>
+                            <option value="athlete">Deportista</option>
+                            <option value="artist">Artista</option>
+                            <option value="adventurer">Aventurero</option>
+                        </select>
+                    </label>
+                    <label>Personalidad
+                        <select name="characterize" required>
+                            <option value=""></option>
+                            <option value="brave">Valiente</option>
+                            <option value="intelligent">Inteligente</option>
+                            <option value="funny">Gracioso</option>
+                            <option value="adventurous">Aventurero</option>
+                            <option value="shy">Tímido</option>
+                            <option value="curious">Curioso</option>
+                            <option value="friendly">Amigable</option>
+                            <option value="cheerful">Risueño</option>
+                            <option value="grumpy">Enojón</option>
+                            <option value="loyal">Leal</option>
+                        </select>
+                    </label>
+                    <label>Detalles
+                        <select name="characterize" required>
+                            <option value=""></option>
+                            <option value="scar">Cicatriz en el ala</option>
+                            <option value="tattoo">Tatuaje en la pata</option>
+                            <option value="tic">Tic nervioso con el ojo</option>
+                            <option value="laugh">Risa peculiar</option>
+                            <option value="feathers">Plumas de un color diferente</option>
+                            <option value="upright_feather">Una pluma feliz</option>
+                            <option value="patch">Un parche en el ojo</option>
+                            <option value="narcolepsy">Narcolepsia</option>
+                            <option value="jokes">Contar malos chistes</option>
+                            <option value="magic">Magia</option>
+                        </select>
+                    </label>
+                    <label>Accesorios
+                        <select name="characterize" required>
+                            <option value=""></option>
+                            <option value="hat">Sombrero</option>
+                            <option value="cape">Capa</option>
+                            <option value="boots">Botas</option>
+                            <option value="wand">Varita</option>
+                            <option value="glasses">Lentes</option>
+                            <option value="magnifying_glass">Lupa</option>
+                            <option value="knife">Cuchillo</option>
+                            <option value="brushes">Pinceles</option>
+                            <option value="backpack">Mochila</option>
+                            <option value="food">Comida</option>
+                        </select>
+                    </label>
+                    <label>Habilidades
+                        <select name="characterize" required>
+                            <option value=""></option>
+                            <option value="telekinesis">Telequinesis</option>
+                            <option value="invisibility">Invisibilidad</option>
+                            <option value="fire_control">Controlar fuego</option>
+                            <option value="healing">Sanación</option>
+                            <option value="super_strength">Superfuerza</option>
+                            <option value="flight">Vuelo</option>
+                            <option value="time_manipulation">Manipulación del tiempo</option>
+                            <option value="mind_reading">Lectura de mentes</option>
+                            <option value="water_control">Controlar agua</option>
+                            <option value="shape_shifting">Cambiar de forma</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Nombra a tu pato:</legend>
+                    <label>
+                        <input name="name" type="text" placeholder="Nombre de tu pato" minlength="4" maxlength="30"
+                            required>
+                    </label>
+                </fieldset>
+                <br>
+                <button type="submit">Crear</button>
+            </form>
+        </section>
     </main>
     <footer class="footer">
         <p>Síguenos: <a href="">Facebook</a> | <a href="">Twitter</a> | <a href="">Instagram</a> Únete a nuestra

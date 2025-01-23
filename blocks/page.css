@@ -1,9 +1,13 @@
 * {
-  font-size: 16px;
-  margin: 0;
   padding: 0;
-  background-color: var(--background_page);
-  font-family: var(--font_text);
+  margin: 0;
+  font-size: 16px;
+  max-width: 1980px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 :root {
@@ -14,4 +18,6 @@
   --font_title: "Gorditas", serif;
   --font_subtitle: "Averia Sans Libre", serif;
   --font_text: "Source Sans 3", serif;
+  overflow-x: hidden;
+  background-color: var(--background_page);
 }
