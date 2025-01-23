@@ -6,25 +6,6 @@
   background-color: #f9f4f4;
 }
 
-.gorditas-regular {
-  font-family: "Gorditas", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.averia-sans-libre-regular {
-  font-family: "Averia Sans Libre", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.source-sans-3 {
-  font-family: "Source Sans 3", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .form__title {
   text-align: center;
   font-size: 65px;
